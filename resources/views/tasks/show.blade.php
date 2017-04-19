@@ -4,7 +4,6 @@
   <title></title>
 </head>
 <body>
-  <h1>About Me:</h1>
-  <h2>Name: <?php echo $name; ?></h2>
+  <h1>{{ $task->body }}</h1>
 </body>
 </html>

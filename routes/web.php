@@ -12,9 +12,24 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('index', [
+      'name' => 'John Michael Moore',
+      'age' => 31
+    ]);
 });
 
-Route::get('/about', function () {
-    return view('about');
+Route::get('about', function () {
+    return view('about')->with('name', 'John Michael Moore');
+});
+
+Route::get('extrapage', function () {
+    $name = 'John Michael Moore';
+    $age = 31;
+    $tasks = [
+      'go to the store',
+      'get milk',
+      'drink milk',
+      'enjoy life'
+    ];
+    return view('extrapage', compact('name', 'age', 'tasks'));
 });

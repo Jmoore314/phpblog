@@ -33,3 +33,7 @@ Route::get('extrapage', function () {
     ];
     return view('extrapage', compact('name', 'age', 'tasks'));
 });
+
+Route::get('/tasks', 'TasksController@index');
+
+Route::get('/tasks/{task}', 'TasksController@show');

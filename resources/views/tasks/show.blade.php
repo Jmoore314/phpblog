@@ -1,9 +1,5 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title></title>
-</head>
-<body>
+@extends('layouts.master')
+
+@section('content')
   <h1>{{ $task->body }}</h1>
-</body>
-</html>
+@endsection

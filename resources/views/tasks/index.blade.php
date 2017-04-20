@@ -1,9 +1,6 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title></title>
-</head>
-<body>
+@extends('layouts.master')
+
+@section('content')
   <ul>
     @foreach ($tasks as $task)
       <li>
@@ -13,5 +10,4 @@
       </li>
     @endforeach
   </ul>
-</body>
-</html>
+@endsection

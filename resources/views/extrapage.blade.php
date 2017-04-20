@@ -1,9 +1,6 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title></title>
-</head>
-<body>
+@extends('layout')
+
+@section('content')
   <h1>About Me:</h1>
   <ul>
     <li>Name: <?php echo $name; ?></li>
@@ -20,5 +17,4 @@
       <li>{{ $task }}</li>
     @endforeach
   </ul>
-</body>
-</html>
+@endsection
